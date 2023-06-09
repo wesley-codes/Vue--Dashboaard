@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    font-size: 10px;
+
+    --red: #FF3A29;
+    --lightblue: #02A0FC;
+    --purple: #4339F2;
+    --green: #34B53A;
+    --yellow: #FFB200;
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-lightblue {
+    background-color: var(--lightblue);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: DM Sans Medium;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: DM Sans Medium;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-family: DM Sans Regular;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: DM Sans Regular;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+h5 {
+    font-family: DM Sans Regular;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+p {
+    font-family: DM Sans Regular;
+    font-size: 1.6rem;
+}
+
+@font-face {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/DMSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DM Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/DMSans-Medium.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'DM Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/DMSans-Bold.woff') format('woff');
+}
+
+#app {
+    display: flex;
+    background-color: #F8F8F8;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5rem;
+}
